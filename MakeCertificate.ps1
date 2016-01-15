@@ -3,7 +3,8 @@ Write-Host "  /  |/  /__ _/ /_____   / ___/__ ____/ /_(_) _(_)_______/ /____   "
 Write-Host " / /|_/ / _ `/  '_/ -_)  / /__/ -_) __/ __/ / _/ / __/ _ `/ __/ -_)";
 Write-Host "/_/  /_/\_,_/_/\_\\__/  \___/\__/_/  \__/_/_//_/\__/\__/\__/\__/   ";
 Write-Host;
-Write-Host "Makes certificate files by answering a few simple questions. Read this http://www.jayway.com/2014/09/03/creating-self-signed-certificates-with-makecert-exe-for-development/ if you want to learn more about how to create certificates.";
+Write-Host "Makes certificate files by answering a few simple questions.";
+Write-Host "  Learn: http://www.jayway.com/2014/09/03/creating-self-signed-certificates-with-makecert-exe-for-development/.";
 Write-Host " Author: Muhammad Rehan Saeed, RehanSaeed.com, @RehanSaeedUK";
 Write-Host "Project: https://github.com/RehanSaeed/MakeCertificate"
 Write-Host "Version: 1.0";
@@ -16,9 +17,12 @@ do
 {
     Write-Host "What type of certificate do you want to create?";
     Write-Host;
-    Write-Host "    1 - Certificate Authority (CA) - Equivelant to a certificate from GoDaddy or Verisign, but for development and testing.";
-    Write-Host "    2 - SSL Server Certificate - Handle SSL on the server. This requires a Certificate Authority (CA) Certificate private and public key file.";
-    Write-Host "    3 - Client Certificate - Can be used for client certificate authentication. This requires a Certificate Authority (CA) Certificate private and public key file.";
+    Write-Host "  1 - Certificate Authority (CA) - Equivelant to a certificate from GoDaddy or Verisign but used for development";
+    Write-Host "      and testing.";
+    Write-Host "  2 - SSL Server Certificate - Handle SSL on the server. This requires a Certificate Authority (CA) Certificate";
+    Write-Host "      private and public key file.";
+    Write-Host "  3 - Client Certificate - Can be used for client certificate authentication. This requires a Certificate";
+    Write-Host "      Authority (CA) Certificate private and public key file.";
     Write-Host;
     $certificateType = Read-Host;
     Write-Host;
