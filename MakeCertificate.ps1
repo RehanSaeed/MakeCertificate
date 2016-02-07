@@ -8,6 +8,9 @@ Write-Host "  Learn: http://www.jayway.com/2014/09/03/creating-self-signed-certi
 Write-Host " Author: Muhammad Rehan Saeed, RehanSaeed.com, @RehanSaeedUK";
 Write-Host "Project: https://github.com/RehanSaeed/MakeCertificate"
 Write-Host "Version: 1.0";
+Write-Host " Output: .cer - A public key file that can be shared.";
+Write-Host "         .pvk - A private key file that should be kept secret.";
+Write-Host "         .pfx - A combined public and private key file that should be kept secret.";
 Write-Host;
 
 $makecert = "C:\Program Files (x86)\Windows Kits\10\bin\x64\makecert.exe";
