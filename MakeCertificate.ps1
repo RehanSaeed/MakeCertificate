@@ -20,7 +20,7 @@ do
 {
     Write-Host "What type of certificate do you want to create?";
     Write-Host;
-    Write-Host "  1 - Certificate Authority (CA) - Equivelant to a certificate from GoDaddy or Verisign but used for development";
+    Write-Host "  1 - Certificate Authority (CA) - Equivalent to a certificate from GoDaddy or Verisign but used for development";
     Write-Host "      and testing.";
     Write-Host "  2 - SSL Server Certificate - Handle SSL on the server. This requires a Certificate Authority (CA) Certificate";
     Write-Host "      private and public key file.";
